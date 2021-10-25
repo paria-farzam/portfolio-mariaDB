@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section class="m-0">
+      <header
+        class="
+          d-flex
+          p-5
+          navbar-expand-md
+          text-light
+          justify-content-between
+          align-items-center
+        "
+      >
+        <div class="navbar-expand-md">
+          <h3 class="logo d-inline bg-primary py-2 px-3"><b>Y</b></h3>
+          <h2 class="d-inline mx-1"><b>Your</b> Name</h2>
+        </div>
+        <nav class="d-flex align-items-center">
+          <a class="text-decoration-none" href="/">About</a>
+          <a class="text-decoration-none" href="./resume">Resume</a>
+          <a class="text-decoration-none" href="./contact">Contact</a>
+          <a class="text-decoration-none" href="./extra">Extra</a>
+          <% if(isLogin){ %>
+          <a class="text-decoration-none" href="./messages">Message</a>
+          <% } else { %>
+          <a class="text-decoration-none" href="./login">Login</a>
+          <% } %>
+        </nav>
+      </header>
+      <div class="titr d-flex px-5 m-0 flex-row justify-content-between">
+        <h1 class="m-3 align-self-center"><b>Extra</b></h1>
+        <h6 class="mx-2 my-3">(n) years of exprience</h6>
+      </div>
+    </section>
+
+    <section class="row mx-auto">
+      <h4 class="col-12 mx-5 mt-5 w-75">Pricing</h4>
+      <div class="col-4 price-option text-center first-PO">
+        <p class="my-4">Silver</p>
+        <h1 class="mb-4">$64</h1>
+        <button class="mb-4 px-3 py-2">Free Trial</button>
+        <ul class="px-0 mb-5">
+          <li class="mb-3">Lorem Ipsum</li>
+          <li class="mb-3">dolor sit sollicitudin</li>
+          <li class="mb-3">amet consectetur</li>
+        </ul>
+      </div>
+      <div class="col-4 price-option text-center">
+        <p class="my-4">Gold</p>
+        <h1 class="mb-4">$128</h1>
+        <button class="mb-4 px-3 py-2">Free Trial</button>
+        <ul class="px-0 mb-5">
+          <li class="mb-3">Lorem Ipsum</li>
+          <li class="mb-3">dolor sit sollicitudin</li>
+          <li class="mb-3">amet consectetur</li>
+          <li class="mb-3">adipisicing elit</li>
+        </ul>
+      </div>
+      <div class="col-4 price-option text-center">
+        <p class="my-4">Pelatinum</p>
+        <h1 class="mb-4">$256</h1>
+        <button class="mb-4 px-3 py-2">Free Trial</button>
+        <ul class="px-0 mb-5">
+          <li class="mb-3">Lorem Ipsum</li>
+          <li class="mb-3">dolor sit sollicitudin</li>
+          <li class="mb-3">amet consectetur</li>
+          <li class="mb-3">adipisicing elit</li>
+          <li class="mb-3">Ad dignissimos</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0" />
+    <footer class="d-flex flex-row justify-content-between pt-3">
+      <ul class="d-flex flex-row p-0 mx-5">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <h6 class="mx-5">© 2021 All rights reserved.</h6>
+    </footer>
+  </body>
+</html>
